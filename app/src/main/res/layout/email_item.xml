@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start"
+    android:padding="5dp"
+    app:layoutDescription="@xml/email_item_scene">
+
+    <FrameLayout
+        android:id="@+id/avatar_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/primary">
+
+        <TextView
+            android:id="@+id/avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="O"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:emojiCompatEnabled="true"
+            tools:ignore="HardcodedText" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:paddingHorizontal="5dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/important"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@drawable/important"
+                android:checked="true"
+                app:buttonTint="@color/m3_checkbox_button_tint"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/source"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:text="Lorem Ipsum"
+                android:textSize="20sp"
+                android:textFontWeight="700"
+                android:singleLine="true"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/time"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:34 PM"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ac tincidunt dolor. Duis sit amet erat nec neque congue commodo. Aliquam ac hendrerit arcu. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ornare efficitur ipsum eget faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla facilisi. Etiam sed volutpat est, at pulvinar nibh. Nam nulla odio, facilisis et imperdiet in, volutpat vel libero. Etiam rhoncus ac ante in suscipit. Nam aliquet ullamcorper mauris, aliquam convallis enim sollicitudin sed. Cras rhoncus augue elit, nec tempor enim auctor quis. Vestibulum congue elit ut interdum fringilla. Nullam at feugiat lorem. Aliquam blandit enim non est efficitur, vitae posuere tortor hendrerit.
+
+Nullam eu nisl non dui efficitur fringilla at et nulla. Nulla id ligula non quam tincidunt aliquet. Phasellus odio nulla, porttitor tristique pretium eget, semper vitae sapien. Sed blandit quam sed hendrerit varius. Nullam et odio sed diam porta condimentum id eu sem. Ut eu libero lectus. Quisque eget tincidunt nulla. Sed urna nunc, scelerisque eleifend sapien eget, mollis commodo orci. Nunc sapien velit, dictum nec cursus convallis, porttitor quis libero. In nec ante metus.
+
+Mauris dapibus dolor massa, at auctor tellus posuere eget. Sed auctor pellentesque nibh, eget dapibus lacus elementum a. Maecenas non auctor justo, id aliquet neque. Mauris vitae laoreet eros. Praesent sed purus tincidunt, lacinia massa in, blandit risus. Nullam aliquet, nisl sed interdum luctus, sem diam sagittis augue, nec consectetur est eros vitae orci. Pellentesque eu ligula vel magna sagittis suscipit quis non neque. Morbi suscipit rhoncus ex. Mauris cursus, lorem in egestas viverra, nunc nibh tempus magna, id eleifend lorem turpis in lectus. Nullam dictum sollicitudin iaculis. Donec maximus odio sed erat sollicitudin, semper lobortis nunc viverra. Proin tincidunt, metus et consectetur blandit, mauris nulla volutpat sem, sed pretium leo lacus in nisi. Proin ac vestibulum nibh. Morbi quam turpis, posuere sit amet auctor dapibus, tristique ac mauris.
+
+Pellentesque ultricies varius elit nec tincidunt. Vivamus et neque at turpis rutrum malesuada. Aenean malesuada, elit sit amet porta sollicitudin, mauris velit laoreet lectus, ac feugiat elit nunc et dolor. Cras sodales lobortis mauris id lobortis. Aliquam sed congue elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam convallis hendrerit porttitor. Fusce blandit at dui ut pulvinar. Suspendisse auctor nibh ligula. Vivamus finibus nunc vel dictum sollicitudin. Aenean varius auctor eros, nec tincidunt neque finibus id. Integer eget velit cursus, mollis dolor sed, vestibulum velit.
+
+Fusce dapibus luctus lobortis. Vestibulum commodo libero sit amet pulvinar congue. Maecenas vel elit gravida, semper eros vitae, consectetur dui. Nunc molestie faucibus ornare. Vestibulum non massa ut ligula porttitor egestas. In eu cursus risus. Phasellus ut dolor tempus, malesuada eros quis, vehicula erat. Nunc a augue nisl. Cras sed eleifend sem. Praesent nec interdum nisl. Cras finibus nisi ut tempus condimentum. Nam non orci lacinia, auctor velit ac, faucibus enim. Vestibulum libero turpis, condimentum eget justo a, commodo posuere ligula. In tempus convallis arcu a ultrices. Pellentesque ac viverra odio, id viverra ex. Mauris nec erat risus."
+                    android:singleLine="true"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/star"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@drawable/star"
+                android:checked="false"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
